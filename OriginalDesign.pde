@@ -11,18 +11,21 @@ void draw(){
   fill(142, 61, 21);
   rect(0,400,600,200);
   fill(0,0,70);
+  rect(200+x,250,50,180);
   rect(100+x, 350,150,100);
   ellipse(100+x,400,100,100);
+  fill(245,245,245);
+  ellipse(225 + x, 210, 50,50);
   x = x + 1;
   if(x > 600){
     x = 0;
   }
-  y = y + 3;
+  y = y + 2;
   if(y > 400){
     y = 0;
   }
   z = z + 1;
-  if(z > 133){
+  if(z > 200){
     words();
   }
 }
@@ -46,8 +49,5 @@ void words(){
   fill(0,0,0);
   rect(0,0,600,600);
   fill(255,255,255);
-  text("The sun has set, the world has ended. They shall rise.",200,300);
-  
+  text("The sun has set, and the world goes boom.",200,300);
 }
-
-
